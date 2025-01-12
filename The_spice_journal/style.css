@@ -1,0 +1,313 @@
+*{
+    border: none;
+    color: #333333e3;
+    background-color: #f5f1e7;
+}
+
+/* Preset */
+
+h1 {
+    font-family: "Cinzel";
+    font-weight: bolder;
+    color: #ec0001;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: "Cinzel";
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: "Lato";
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+p {
+    font-family: "Lato";
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    width: 90%;
+    height: 0.1rem;
+    background-color: white;
+    border: none;
+}
+
+button {
+    height: 3.5rem;
+    width: 11rem;
+    margin-top: 2.5rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #ec0001;
+    color: #f5f1e7;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+i {
+    color: #ec0001;
+    margin-left: 0.5rem;
+}
+
+.heading h2 {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+.head-sec {
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 0.2rem solid #f5f1e7;
+}
+
+.logo {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.options {
+    color: #252525;
+    display: flex;
+    width: 20%;
+    margin-right: 5%;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.options p {
+    font-size: 1rem;
+}
+
+.options a {
+    color: #ec0000;
+    font-size: 1.2rem;
+    font-family: "Raleway";
+}
+
+/* Navbar */
+.navbar {
+    height: 3rem;
+    margin-top: 1rem;
+    color: #333333b0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 0 2rem;
+}
+
+.navbar ul li a {
+    font-family: "Lato";
+    font-weight: 600;
+    text-decoration: none;    
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+    color: #ec0000;
+}
+
+/* Dropdown container */
+.navbar ul li.dropdown {
+    position: relative;  
+}
+
+.navbar ul li.dropdown .dropdown-content {
+    display: none; 
+    position: absolute; 
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2); 
+    z-index: 1; /* Ensures it is on top of other content */
+    padding: 10px 0;
+}
+
+.navbar ul li.dropdown:hover .dropdown-content {
+    display: block;
+    width: 15rem;
+}
+
+.navbar ul li.dropdown .dropdown-content li a {
+    text-decoration: none; 
+    display: block;
+}
+
+.navbar ul li.dropdown .dropdown-content li {
+    margin-top: 0.5rem;
+}
+
+.navbar ul li.dropdown .dropdown-content li a:hover {
+    color: #ec0000; 
+}
+/* Hero-section */
+.hero-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+}
+
+.hero-content {
+    height: 500px; 
+    width: 90%; 
+    background-image: url(Assets/Background/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1.5rem; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.hero-content h2, .hero-content h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    background-color: transparent;
+    color: #f5f1e7; 
+    line-height: 1.8;
+}
+
+.hero-content button:hover {
+    background-color: #b80000; /* Darker shade on hover */
+}
+
+/* Panel - 1 */
+.panel-1 {
+    margin-bottom: 3rem;
+}
+
+/* Image Section */
+.panel-1-img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+}
+
+.box {
+    height: 20rem;
+    width: 24%;
+    padding: 0px 0px 15px;
+}
+
+.box-img {
+    height: 18rem;
+    width: 100%;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    background-size: cover;
+}
+
+.box-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-text p {
+    color: #252525;
+}
+
+/* Panel - 2 */
+.recipe-sec {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.recipe {
+    height: 35rem;
+    width: 30%;
+    padding: 20px 0px 15px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.recipe-img {
+    height: 25rem;
+    width: 100%;
+    border-radius: 2rem;
+    background-size: cover;
+}
+
+.recipe-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.recipe-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.recipe-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.chef-info p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.ratings {
+    font-size: 1rem;
+    color: #f1c40f;
+    display: flex;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.ratings .fa-star {
+    font-size: 1rem;
+}
+
+.panel-2-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel-2-text p {
+    color: black;
+    font-family: "Lato";
+    font-weight: 600;
+    text-decoration: none;    
+    text-transform: uppercase;
+}
