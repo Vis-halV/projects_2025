@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    color: black;
+}
+
+/* KIT */
+
+nav {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+button {
+    width: 240px;
+    height: 3rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+
+}
+
+p {
+    margin-top: 0..5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Recipe Header */
+
+.recipe-header {
+    height: 15rem;
+    padding-left: 12%;
+    padding-right: 12%;
+    display: flex;
+}
+
+.recipe-details {
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.ratings {
+    margin-bottom: 1rem;
+}
+
+.recipe-cta {
+    width: 50%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.recipe-cta .fa-arrow-down, .fa-file-pdf {
+    font-size: 1rem;
+}
+
+/* Recipe Body */
+
+.recipe-body {
+    background-color: grey;
+    height: 100rem;
+    display: flex;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.recipe-article {
+    width: 75%;
+}
+
+/* Side-bar */
+
+.author-details {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-side-bar {
+    width: 25%;
+    background-color: white;
+}
+
+.pfp-img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-image: url("https://raw.githubusercontent.com/Vis-halV/Projects_2025/refs/heads/main/The_spice_journal/Assets/Page/pfp.jpg");
+    background-size: cover;
+}
+
+.author-pfp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.author-intro {
+    text-align: center;
+    line-height: 1.5;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+
+/* SUMMA */
+
+.summa {
+    height: 50px;
+    width: 100%;
+}
