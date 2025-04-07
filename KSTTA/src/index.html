@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/37f8a96df3.js" crossorigin="anonymous"></script>
+  <title>KSTTA</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <Header class="flex justify-between items-center bg-white text-black p-4">
+    <h1 class="ml-[5%]">KSTTA</h1>
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="#home" class="text-gray-800 hover:text-gray-600">Home</a></li>
+        <li><a href="#about-us" class="text-gray-800 hover:text-gray-600">About US</a></li>
+        <li><a href="#tp" class="text-gray-800 hover:text-gray-600">Training Program</a></li>
+        <li><a href="#coach" class="text-gray-800 hover:text-gray-600">Coaches</a></li>
+        <li><a href="#facilities" class="text-gray-800 hover:text-gray-600">Facilities</a></li>
+        <li><a href="#events" class="text-gray-800 hover:text-gray-600">Events</a></li>
+        <li><a href="#membership" class="text-gray-800 hover:text-gray-600">Memberships</a></li>
+        <li><a href="#gallery" class="text-gray-800 hover:text-gray-600">Gallery</a></li>
+        <li><a href="#faq" class="text-gray-800 hover:text-gray-600">FAQ</a></li>
+      </ul>
+    </nav>
+    <button class="mr-[5%] bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-800 transition duration-300"><a href="#contact-us">Contact Us</a></button>
+  </Header>
+  <!-- Home -->
+  <div class="relative flex items-center justify-center h-[35rem] bg-no-repeat bg-cover bg-black/50" style="background-image: url(./assets/ma-long.avif);">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+      <h1 class="text-4xl font-bold text-white relative z-10">Practice . Precision . Perfection</h1>
+  </div>
+  <!-- About Us -->
+  <div class="grid grid-cols-12 mx-[5%] gap-4 items-center h-[30rem]">
+    <div class="col-span-5 h-full flex items-center justify-center">
+      <img src="./assets/profic.jpg" alt="Ma Long" class="w-[70%] h-[70%] object-cover shadow-lg">
+    </div>
+    <div class="col-span-7 items-start">
+      <h2 class="text-2xl font-bold mb-4">About US</h2>
+      <p class="text-sm">At our academy, "Practice. Precision. Perfection." is more than just a motto—it’s the foundation of our training. My journey in table tennis began without a mentor, relying only on self-learning and determination. That experience drives me today to provide the structured guidance I once lacked. As a certified coach trained by SAI NIS, I am one of the very few in Tamil Nadu holding this elite certification, making our academy stand apart. Our program is designed to develop both the mind and body, ensuring that every athlete is always in peak form and capable of executing their game with precision.</p>
+      <br><p class="text-sm">We emphasize respect, discipline, and high-intensity training. Every student is treated like family, yet challenged with rigorous workouts, technical drills, and strategy-focused sessions. Training is continuous, with mandatory league matches and monthly events sponsored by the academy. Our specialized programs cater to school and university athletes, as well as those preparing for elite competitions, including customized coaching for differently-abled players. With a proven track record of success, including a Commonwealth medalist, we are committed to shaping champions. Our goal is to set a new standard in table tennis coaching, ensuring every player receives the best training possible. By fostering a culture of discipline and excellence, we aim to build the top table tennis academy in India, providing world-class mentorship and opportunities for aspiring athletes.</p>
+    </div>
+  </div>
+  <!-- Membership and Fees -->
+  <h2 class="text-2xl font-bold mb-4 text-center">Membership plans</h2>
+  <div class=" mx-[5%] grid grid-cols-3 gap-4 p-4">
+    <div id="basicMembership" class="flex flex-col bg-white p-4 rounded shadow-lg relative">
+      <h3 class="text-xl font-bold mb-2 text-center">Rookie</h3>
+      <div class="flex items-center justify-center mb-8 text-[gold]">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+      <ul>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> 5 sessions/week (1.5 hrs)</li>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Small-group coaching format</li>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Weekly match-style drills</li>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Quarterly in-house events</li>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Focus on fundamentals & movement</li>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Intro-level fitness integration</li>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Access to training video library</li>
+        <li class="text-black text-sm my-[0.75rem] invisible"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Hidden</li>
+      </ul>
+      <div class="flex justify-center mt-4">
+        <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-800 transition duration-300">₹799/monthly</button>
+      </div>
+    </div>
+    <div id="advanceMembership" class="flex flex-col bg-white p-4 rounded shadow-lg relative">
+      <h3 class="text-xl font-bold mb-2 text-center">Intermediate</h3>
+      <div class="flex items-center justify-center mb-8 text-[gold]">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+      <ul>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> 6 sessions/week (2 hrs)</li>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Individual skill plans</li>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Competitive match simulations</li>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Monthly performance events</li>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Advanced technique & tactics</li>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Nutrition & recovery guidance</li>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Full video analysis access</li>
+        <li class="text-black text-sm my-[0.75rem] invisible"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Hidden</li>
+      </ul>
+      <div class="flex justify-center mt-4">
+        <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-800 transition duration-300">₹999/monthly</button>
+      </div>
+    </div>
+    <div id="customMembership" class="flex flex-col bg-white p-4 rounded shadow-lg relative">
+      <h3 class="text-xl font-bold mb-2 text-center">Pro+</h3>
+      <div class="flex items-center justify-center mb-8 text-[gold]">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+      </div>
+      <ul>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Custom schedule & session length</li>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> High-performance coaching plans</li>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Strength, agility & injury prevention</li>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Dedicated one-on-one coaching</li>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Strategy planning & opponent analysis</li>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Sponsored tournament entries</li>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Mentorship & progress tracking</li>
+        <li class="text-black text-sm my-[0.75rem]"><i class="text-green-600 fa-solid fa-circle-arrow-right pr-2"></i> Priority facility access</li>
+      </ul>
+      <div class="flex justify-center mt-4">
+        <button class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-800 transition duration-300">₹1499/monthly</button>
+      </div>
+    </div>
+  </div>
+  <!-- Training program -->
+  <h2 class="text-2xl font-bold py-[1rem] mt-4 text-center">Training program</h2>
+  <div class="h-[35rem] grid grid-cols-12 mx-[5%]">
+    <div class="col-span-6 h-[30rem] bg-[#f6f8fc] justify-center flex flex-col px-[2rem] rounded-l-lg">
+      <div class="flex items-center justify-center h-[3rem] w-[3rem] bg-[#484dff] rounded-full">
+        <div class="flex items-center justify-center h-[2.5rem] w-[2.5rem] bg-[#1a3066] rounded-full">
+          <h2 class="text-2xl font-bold text-white">1</h2>
+        </div>
+      </div>
+      <h2 class="text-2xl font-bold my-[2rem] ">Join the Training Program</h2>
+      <p class="text-xl">Kickstart your journey with our carefully curated training sessions. Each session is designed to enhance technique, build endurance, and improve match strategy.</p>
+    </div>
+    <div class="col-span-6 h-[30rem] bg-center bg-no-repeat bg-cover" style="background-image: url('./assets/tp/01.svg'); background-size: 90%;"></div>
+  </div>
+  <div class="h-[35rem] grid grid-cols-12 mx-[5%]">
+    <div class="col-span-6 h-[30rem] bg-center bg-cover bg-no-repeat" style="background-image: url('./assets/tp/02.svg'); background-size: 90%;"></div>
+    <div class="col-span-6 h-[30rem] bg-[#1a3066] text-white justify-center flex flex-col px-[2rem] rounded-r-lg">
+      <div class="flex items-center justify-center h-[3rem] w-[3rem] bg-[#484dff] rounded-full">
+        <div class="flex items-center justify-center h-[2.5rem] w-[2.5rem] bg-[#1a3066] rounded-full">
+          <h2 class="text-2xl font-bold text-white">2</h2>
+        </div>
+      </div>
+      <h2 class="text-2xl font-bold my-[2rem] ">Train with the Best</h2>
+      <p class="text-xl">Our skilled coaches provide hands-on guidance, ensuring you refine your footwork, strokes, and game awareness with personalized coaching and structured drills.</p>
+    </div>
+  </div>
+  <div class="h-[35rem] grid grid-cols-12 mx-[5%]">
+    <div class="col-span-6 h-[30rem] bg-[#f6f8fc] justify-center flex flex-col px-[2rem] rounded-l-lg">
+      <div class="flex items-center justify-center h-[3rem] w-[3rem] bg-[#484dff] rounded-full">
+        <div class="flex items-center justify-center h-[2.5rem] w-[2.5rem] bg-[#1a3066] rounded-full">
+          <h2 class="text-2xl font-bold text-white">3</h2>
+        </div>
+      </div>
+      <h2 class="text-2xl font-bold my-[2rem] ">Compete and Improve</h2>
+      <p class="text-xl">Put your skills to the test with regular practice matches and exclusive in-house tournaments. Track your progress and fine-tune your technique through video analysis.</p>
+    </div>
+    <div class="col-span-6 h-[30rem] bg-center bg-no-repeat bg-cover" style="background-image: url('./assets/tp/03.svg'); background-size: 90%;"></div>
+  </div></div>
+  <!-- Gallery -->
+  <h2 class="text-2xl font-bold mb-4 text-center">Gallery</h2>
+  <div class="grid grid-cols-3 grid-rows-3 mx-[5%] h-auto gap-4 mb-[2rem]">
+    <div class="col-span-1 bg-gray-700 rounded h-[20rem] w-full"></div>
+    <div class="col-span-1 bg-gray-700 rounded h-[20rem] w-full"></div>
+    <div class="col-span-1 bg-gray-700 rounded h-[20rem] w-full"></div>
+    <div class="col-span-1 bg-gray-700 rounded h-[20rem] w-full"></div>
+    <div class="col-span-1 bg-gray-700 rounded h-[20rem] w-full"></div>
+    <div class="col-span-1 bg-gray-700 rounded h-[20rem] w-full"></div>
+    <div class="col-span-1 bg-gray-700 rounded h-[20rem] w-full"></div>
+    <div class="col-span-1 bg-gray-700 rounded h-[20rem] w-full"></div>
+    <div class="col-span-1 bg-gray-700 rounded h-[20rem] w-full"></div>
+  </div>
+  <span class="flex items-center justify-center mb-4"><button class="bg-white text-black border border-gray-800 px-4 py-2 rounded hover:bg-gray-800 hover:text-white transition duration-300 font-bold">Show more</button></span>
+  <!-- FAQ -->
+  <h2 class="text-2xl font-bold mb-4 text-center">Frequently asked questions</h2>
+
+  <span class="flex items-center justify-center mb-4"><button class="bg-white text-black border border-gray-800 px-4 py-2 rounded hover:bg-gray-800 hover:text-white transition duration-300 font-bold">Still have questions ?</button></span>
+  <!-- Footer -->
+  <footer class="text-center bg-gray-700 text-white px-[5%] pt-[1rem] py-[2rem]">
+    <div class="pt-[1rem]">
+      <ul class="flex space-x-4 justify-center">
+          <li><a href="#home">Home</a></li>  
+          <li><a href="#coach">Coaches</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#membership">Memberships</a></li>
+      </ul>
+    </div>
+    <span class="px-[1rem]">
+      <h1 class="text-3xl">KSTTA</h1>
+      <h2>Practice. Precision. Perfection.</h2>
+    </span>
+    <div class="w-[30%] mx-[35%] flex items-center justify-between mb-8 text-[white] text-xl">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-facebook-messenger"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+    <hr class="w-[90%] mx-[5%] mb-[1rem]">
+    <span>Copyright &copy; 2025 KSTTA | All Rights Reserved.</span>
+  </footer>
+</body>
+</html>
