@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+/* Custom Colors */
+
+@theme {
+    --color-copper-100: #C95F2A;
+    --color-slate-800: #6C6F73;
+}
+
+/* Text Colors */
+.text-copper {
+    color: var(--color-copper-100);
+}
+
+/* Background Colors */
+.bg-slate {
+    background-color: var(--color-slate-800);
+}
+
+i:hover,
+a:hover {
+    color: var(--color-copper-100);
+}
