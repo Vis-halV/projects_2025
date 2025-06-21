@@ -1,0 +1,54 @@
+    {
+        "filters": [
+            { "id": "all", "label": "All Feelings" },
+            { "id": "melancholy", "label": "Melancholy" },
+            { "id": "joy", "label": "Joy" },
+            { "id": "longing", "label": "Longing" },
+            { "id": "peace", "label": "Peace" },
+            { "id": "intensity", "label": "Intensity" }
+        ],
+        "posts": [
+            {
+                "id": 1,
+                "image": "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=600&h=600&fit=crop",
+                "text": "some days feel like drowning in silence",
+                "mood": "melancholy",
+                "author": "anonymous soul"
+            },
+            {
+                "id": 2,
+                "image": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=600&fit=crop",
+                "text": "finding light in the smallest moments",
+                "mood": "joy",
+                "author": "quiet observer"
+            },
+            {
+                "id": 3,
+                "image": "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=600&h=600&fit=crop",
+                "text": "missing you in colors that dont exist",
+                "mood": "longing",
+                "author": "midnight dreamer"
+            },
+            {
+                "id": 4,
+                "image": "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=600&h=600&fit=crop",
+                "text": "waves carry away what words cannot",
+                "mood": "peace",
+                "author": "ocean child"
+            },
+            {
+                "id": 5,
+                "image": "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=600&h=600&fit=crop",
+                "text": "burning with everything unsaid",
+                "mood": "intensity",
+                "author": "fire heart"
+            },
+            {
+                "id": 6,
+                "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=600&fit=crop",
+                "text": "breathing in the space between thoughts",
+                "mood": "peace",
+                "author": "still waters"
+            }
+        ]
+    }
