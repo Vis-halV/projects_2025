@@ -13,39 +13,41 @@
     <title>feltnotsaid</title>
 
 </head>
-<body>
+<body class="bg-white text-gray-900">
 
     <!-- Header -->
-    <header class="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-border z-50">
+    <header class="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-200 z-50">
       <nav class="container mx-auto px-6 py-4">
         <div class="flex items-center justify-between">
             <a href="/" class="font-playfair text-xl font-medium tracking-tight">feltnotsaid</a>
             
             <!-- Desktop Navigation -->
             <div class="hidden md:flex items-center space-x-8 text-sm font-light tracking-wide transition-colors duration-200 text-gray-700 hover:text-black hover:border-black">
-                <a id="create" href="/create" class="border-b border-grey-500">Create</a>
-                <a id="explore" href="/explore" class="border-b border-grey-500">Explore</a>
-                <a id="about" href="/about" class="border-b border-grey-500">About</a>
-                <a id="contact" href="/contact" class="border-b border-grey-500">Contact</a>
+                <a id="create" href="/create.html" class="border-b border-grey-500">Create</a>
+                <a id="explore" href="/explore.html" class="border-b border-grey-500">Explore</a>
+                <a id="about" href="/about.html" class="border-b border-grey-500">About</a>
+                <a id="contact" href="/contact.html" class="border-b border-grey-500">Contact</a>
+    
             </div>
 
 
             <!-- Mobile Menu Button  -->
             <button id="menu-toggle" type="button" class="md:hidden p-2" aria-label="Toggle menu">
                 <div class="w-5 h-5 flex flex-col justify-center items-center space-y-1">
-                    <i class="fa-solid fa-bars bg-foreground transition-all duration-200 text-gray-500 hover:text-black hover:border-black"></i>
+                    <i class="fa-solid fa-bars transition-all duration-200 text-gray-500 hover:text-black hover:border-black"></i>
                 </div>
             </button>
         </div>  
         
         <!-- Mobile Navigation  -->
-        <div id="mobile-menu" class="md:hidden mt-4 pb-4 border-t border-border hidden">
+        <div id="mobile-menu" class="md:hidden mt-4 pb-4 border-t border-gray-200 hidden">
             <div class="flex flex-col space-y-4 pt-4 text-sm font-light tracking-wide transition-colors duration-200 text-gray-600 hover:text-black">
                 <a href="/" >Home</a>
-                <a href="/create">Create</a>
-                <a href="/explore">Explore</a>
-                <a href="/about">About</a>
-                <a href="/contact">Contact</a>
+                <a href="/create.html">Create</a>
+                <a href="/explore.html">Explore</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+                
             </div>
         </div>
         <script>
@@ -70,18 +72,88 @@
     <section class="min-h-screen flex items-center justify-center px-6">
         <div class="text-center max-w-4xl">
             <h1 class="font-playfair text-4xl md:text-6xl lg:text-7xl font-medium text-balance mb-8 fade-in">felt, not said.</h1>
-            <p class="text-lg md:text-xl text-muted-foreground font-light leading-relaxed mb-12 max-w-2xl mx-auto fade-in-delay">Express emotions visually. Upload images, overlay words, share raw feelings instead of conventional social posts.</p>
-            <a href="/create" class="fade-in-delay">
-                <button class="px-6 py-3 rounded-lg bg-black text-white font-medium text-sm transition hover-lift">Start Creating</button>
+            <p class="text-lg md:text-xl text-gray-500 font-light leading-relaxed mb-12 max-w-2xl mx-auto fade-in-delay">Express emotions visually. Upload images, overlay words, share raw feelings instead of conventional social posts.</p>
+            <a href="/create.html" class="fade-in-delay">
+                <button class="button-base px-8 py-4 text-base bg-gray-950 text-gray-100 hover:bg-gray-900">Start Creating</button>
             </a>
         </div>
     </section>
 
+    <!-- Emotion's Gallery  -->
+    <section class="py-20 px-6 bg-gray-100/30">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-3xl md:text-4xl font-medium mb-4">Raw. Unfiltered. Real.</h2>
+                <p class="text-gray-500 font-light">See how others express what words cannot capture</p>
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                const emotionalImages = [
+                    'https://images.unsplash.com/photo-1748792535033-8accf75a6e41?w=400&h=400&fit=crop',//01
+                    'https://images.unsplash.com/photo-1695642050530-c99d578408cf?w=400&h=400&fit=crop',//02
+                    'https://images.unsplash.com/photo-1525612172500-fc66ba177aaf?w=400&h=400&fit=crop',//03
+                    'https://images.unsplash.com/photo-1703441510949-2c8b69495b8f?w=400&h=400&fit=crop',//04
+                    'https://images.unsplash.com/photo-1715959168006-91ded70a6339?w=400&h=400&fit=crop',//05
+                    'https://images.unsplash.com/photo-1703243052800-c547a0abe369?w=400&h=400&fit=crop',//06
+                    'https://images.unsplash.com/photo-1666041218336-dfee251a35af?w=400&h=400&fit=crop',//07
+                    'https://images.unsplash.com/photo-1582036683423-8de19f37aa0e?w=400&h=400&fit=crop',//08
+                    'https://images.unsplash.com/photo-1657706677957-e61f5381dff7?w=400&h=400&fit=crop'//09
+                ];
+
+                const grid = document.getElementById("image-grid");
+
+                emotionalImages.forEach((image, index) => {
+                    const div = document.createElement("div");
+                    div.className = "aspect-square relative overflow-hidden rounded-lg hover-lift group cursor-pointer";
+                    div.style.animationDelay = `${index * 0.1}s`;
+
+                    div.innerHTML = `
+                    <img 
+                        src="${image}" 
+                        alt="Emotional expression ${index + 1}" 
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" 
+                    />
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <span class="text-white text-sm font-light tracking-wide">View feeling</span>
+                    </div>
+                    `;
+                    grid.appendChild(div);
+                });
+                });
+            </script>
+            
+            <div id="image-grid" class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+                <!-- Images will be injected here -->
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="/explore.html">
+                    <button class="button-base px-6 py-3 text-sm border border-gray-200 bg-white text-gray-900 hover:bg-gray-100">Explore All Feelings</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="py-20 px-6">
+        <div class="container mx-auto max-w-3xl text-center">
+          <h2 class="font-playfair text-3xl md:text-4xl font-medium mb-8">For the ones who feel too much</h2>
+          <p class="text-muted-foreground font-light leading-relaxed text-lg">In a world of curated perfection, we believe in the beauty of raw emotion. feltnotsaid is a sanctuary for authentic expression—where vulnerability becomes art, and feelings find their visual voice.</p>
+          <div class="mt-8">
+            <a href="/about.html" class="">
+                <button class="button-base text-gray-900 hover:bg-gray-100 px-6 py-3 text-sm">Our Story</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
     <!-- Footer -->
-    <footer class="flex mt-auto w-full border-t border-border bg-white">
+    <footer class="flex mt-auto w-full border-t border-gray-200 bg-white">
         <div class="container mx-auto px-6 py-8">
             <div class="text-center">
-                 <p class="text-xs text-gray-500 font-light tracking-wide">for those who feel too much.</p>
+                 <p class="text-xs text-gray-500 font-light tracking-wide">for those who feel too much</p>
                 <div class="mt-4 text-xs text-gray-500"> &copy; 2024 feltnotsaid. All feelings reserved.</div>
             </div>
         </div>
