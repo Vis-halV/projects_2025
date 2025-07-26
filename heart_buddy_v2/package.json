@@ -1,0 +1,16 @@
+{
+  "name": "heart_buddy_v2",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Visanth Design",
+  "license": "ISC",
+
+  "scripts": {
+    "style": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}
