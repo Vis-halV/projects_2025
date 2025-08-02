@@ -2,15 +2,14 @@
   "name": "heart_buddy_v2",
   "version": "1.0.0",
   "description": "",
-  "author": "Visanth Design",
   "license": "ISC",
-
+  "author": "",
+  "type": "commonjs",
+  "main": "tailwind.config.js",
   "scripts": {
-    "style": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+    "style": "npx tailwindcss -i ./src/input.css -o ./src/tailwind.css --watch"
   },
-
-  "dependencies": {
-    "@tailwindcss/cli": "^4.1.11",
-    "tailwindcss": "^4.1.11"
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
   }
 }
