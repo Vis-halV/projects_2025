@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'DepartureMono';
+  src: url('/fonts/DepartureMono-Regular.woff2') format('woff2'),
+       url('/fonts/DepartureMono-Regular.woff') format('woff'),
+       url('/fonts/DepartureMono-Regular.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+.font-departure { font-family: 'DepartureMono', monospace; }
+.font-jetbrains { font-family: 'JetBrains Mono', monospace; }
