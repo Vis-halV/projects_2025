@@ -20,7 +20,7 @@ function Hero() {
         <p className="w-2/3 text-lg float-left opacity-75">
           Based in Chennai, India.
         </p>
-        <h3 className="w-1/3 float-right text-end text-white">
+        <h3 className="w-1/3 float-right text-end text-white font-extrabold tracking-widest">
           Featured work{" "}
           <FontAwesomeIcon icon={faArrowDown} className="scale-75 text-white" />
         </h3>
