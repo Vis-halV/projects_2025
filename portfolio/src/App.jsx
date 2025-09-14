@@ -1,11 +1,15 @@
-import './index.css';
-import Index from './pages/Index';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import FeltNotSaid from "./pages/projects/FeltNotSaid"; // example project page
 
 function App() {
   return (
-    <>
-      <Index />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects/feltnotsaid" element={<FeltNotSaid />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

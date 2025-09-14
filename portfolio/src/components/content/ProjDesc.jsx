@@ -3,7 +3,7 @@ import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 
 function ProjDesc({ title, year, desc }) {
   return (
-    <div className="mt-4 text-white uppercase px-[5%] text-lg font-[JetBrains_Mono]">
+    <div className="mt-4 text-white uppercase text-lg font-[JetBrains_Mono]">
       <p className="mt-8">
         {title}, {year}{" "}
         <FontAwesomeIcon icon={faArrowRightLong} />

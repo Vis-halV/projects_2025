@@ -1,0 +1,57 @@
+[
+  {
+    "id": "feltnotsaid",
+    "src": "/assets/mockups/feltnotsaid/home.png",
+    "link": "/projects/feltnotsaid",
+    "alt": "Felt Not Said",
+    "height": "95vh",
+    "title": "Felt Not Said",
+    "year": "2025",
+    "desc": "Visual storytelling and unfiltered emotions",
+    "variant": "stacked"
+  },
+  {
+    "id": "thespicejournal",
+    "src": "/assets/mockups/tsjhome.png",
+    "link": "/projects",
+    "alt": "The Spice Journal",
+    "height": "60vh",
+    "title": "The Spice Journal",
+    "year": "2024",
+    "desc": "Authentic recipes, timeless Indian flavors",
+    "variant": "columns"
+  },
+  {
+    "id": "heartbuddy",
+    "src": "/assets/mockups/hbdual.png",
+    "link": "/projects",
+    "alt": "Heart Buddy",
+    "height": "75vh",
+    "title": "Heart Buddy",
+    "year": "2024",
+    "desc": "Predicting risks, protecting heart health",
+    "variant": "columns"
+  },
+  {
+    "id": "college1",
+    "src": "/assets/mockups/crud_eb.png",
+    "link": "/projects",
+    "alt": "College Project",
+    "height": "75vh",
+    "title": "College Project",
+    "year": "2023",
+    "desc": "Electricity Bill Management System",
+    "variant": "columns"
+  },
+  {
+    "id": "kstta_club",
+    "src": "/assets/mockups/club.png",
+    "link": "/projects",
+    "alt": "Table tennis club",
+    "height": "60vh",
+    "title": "KSTTA Offical",
+    "year": "2023",
+    "desc": "Official website for Table Tennis Academy",
+    "variant": "columns"
+  }
+]
