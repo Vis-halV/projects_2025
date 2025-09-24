@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import FeltNotSaid from "./pages/projects/FeltNotSaid"; // example project page
+import FeltNotSaid from "./pages/FeltNotSaid"; 
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects/feltnotsaid" element={<FeltNotSaid />} />
+        <Route path="/feltnotsaid" element={<FeltNotSaid />} />
       </Routes>
     </BrowserRouter>
   );
